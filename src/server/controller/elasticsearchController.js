@@ -10,9 +10,14 @@ const elasticsearchController = {
     return async (request, response) => {
       try {
         const pingMsg = await ESService.pingCluster(pingOptions);
-        response.status(200).send(pingMsg);
+        if (pingMsg) {
+          return response.status(200).send({status: "Connected"});
+        }
+        response.status(400).send({error: "No Connections"});
       } catch (error) {
-        response.status(500).send(error);
+        response.status(500).send({
+          error: error.message
+        });
       }
     }
   },
@@ -69,6 +74,7 @@ const elasticsearchController = {
       const {indexName, docType, docId,  doc} = request.body;
       try {
         const addDocResp = await ESService.addDocument({indexName, docType, docId, doc});
+        console.log("response ",addDocResp);
         response.status(200).send(addDocResp);
       } catch (err) {
         response.status(400).send({
@@ -149,8 +155,8 @@ const elasticsearchController = {
 
   getDocumentCountByIndexName: async function getDocumentCountByIndexName(request, response, indexName) {
     try {
-      const docCountByName = await ESService.getDocumentCountByIndexName(indexName);
-      response.status(200).send({"count": docCountByName});
+      const { count } = await ESService.getDocumentCountByIndexName(indexName);
+      response.status(200).send({count});
     } catch (err) {
       response.status(400).send({
         error: err.message
@@ -161,13 +167,48 @@ const elasticsearchController = {
   getDocumentCountByCluster: function getDocumentCountByCluster(documentOptions) {
     return async (request, response) => {
       try {
-        const docCountResp = await ESService.getDocumentCountByCluster();
-        response.status(200).send({"count" : docCountResp});
+        const { count } = await ESService.getDocumentCountByCluster();
+        response.status(200).send({count});
       } catch (err) {
         response.sendStatus(400).send({
           error: err.message
         });
       } 
+    }
+  },
+
+  getClusterInfo: function getClusterInfo(clusterOptions) {
+    return async (request, response) => {
+      try {
+        const clusterInfo = await ESService.getClusterInfo();
+        response.status(200).send(clusterInfo);
+      } catch (err) {
+        response.sendStatus(400).send({
+          error: err.message
+        });
+      }
+    }
+  },
+
+  searchInIndex: function searchInIndex(clusterOptions) {
+    return async (request, response) => {
+      const {index, filter, search} = request.query;
+
+      if (!index || !search) {
+        return response.sendStatus(400).send({
+          error: "Query params missing(index and search should be passed)"
+        });
+      }
+
+      try {
+        const searchResult = await ESService.searchInIndex({index, filter, search});
+        console.log("serach Result",searchResult);
+        response.status(200).send(searchResult);
+      } catch (err) {
+        response.sendStatus(400).send({
+          error: err.message
+        });
+      }
     }
   }
 };

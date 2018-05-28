@@ -3,27 +3,32 @@
 */
 import elasticSearchController from '../controller/elasticsearchController';
 
-console.log(elasticSearchController.pingCluster);
-
 const routes = {
- '/elasticsearch/ping': [{
-  method: 'get',
-  controller : elasticSearchController.pingCluster,
-  options: null,
- }],
+  '/elasticsearch/ping': [{
+    method: 'get',
+    controller : elasticSearchController.pingCluster,
+    options: null,
+  }],
+
+
+  '/test': [{
+    method: 'get',
+    controller: elasticSearchController.getClusterInfo,
+    options: null
+  }],
 
  '/index/:indexName' : [{
-  method: 'post',
-  controller: elasticSearchController.createIndex,
-  options: null
- },{
-  method: 'delete',
-  controller: elasticSearchController.deleteIndex,
-  options: null
- },{
-  method: 'get',
-  controller: elasticSearchController.getIndex,
-  options: null
+    method: 'post',
+    controller: elasticSearchController.createIndex,
+    options: null
+  },{
+    method: 'delete',
+    controller: elasticSearchController.deleteIndex,
+    options: null
+  },{
+    method: 'get',
+    controller: elasticSearchController.getIndex,
+    options: null
  }],
 
  '/index': [{
@@ -39,30 +44,36 @@ const routes = {
  }],
 
  '/document/count/:filtertype/:filter': [{
-  method: 'get',
-  controller: elasticSearchController.getDocumentCount,
-  options: null
-}],
+    method: 'get',
+    controller: elasticSearchController.getDocumentCount,
+    options: null
+  }],
 
-'/document/count': [{
-  method: 'get',
-  controller: elasticSearchController.getDocumentCountByCluster,
-  options: null
-}],
+  '/document/count': [{
+    method: 'get',
+    controller: elasticSearchController.getDocumentCountByCluster,
+    options: null
+  }],
+
+  '/document/search/filters': [{
+    method: 'get',
+    controller: elasticSearchController.searchInIndex,
+    options: null
+  }],
 
  '/document/:docId': [{
-  method: 'get',
-  controller: elasticSearchController.getDocumentById,
-  options: null
-}, {
-  method: 'delete',
-  controller: elasticSearchController.deleteDocument,
-  options: null
-}, {
-  method: 'patch',
-  controller: elasticSearchController.updateDocument,
-  options: null
-}]
+    method: 'get',
+    controller: elasticSearchController.getDocumentById,
+    options: null
+  }, {
+    method: 'delete',
+    controller: elasticSearchController.deleteDocument,
+    options: null
+  }, {
+    method: 'patch',
+    controller: elasticSearchController.updateDocument,
+    options: null
+  }]
 };
 
 export default routes;
