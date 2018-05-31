@@ -1,0 +1,56 @@
+{
+  "command": "SELECT",
+  "rowCount": 1,
+  "rows":
+   [ {
+       "accountid": "0016000000lZakNAAS",
+       "accountname": "Northern Trust (Global HQ)",
+       "assestserialnumber": null,
+       "assetname": null,
+       "assetshipdate": null,
+       "assetsonumber": null,
+       "assetsolnumber": null,
+       "assetproductfamily": null,
+       "assetproductplatform": null,
+       "startdate": null,
+       "assetproductcode": null,
+       "cores": null,
+       "hdd": null,
+       "ssd": null,
+       "assetproductname": null,
+       "licenseid": null,
+       "licsonumber": null,
+       "licensename": null,
+       "licensetypename": null,
+       "licenseclass": null,
+       "licenseexpirydate": null,
+       "licensecreateddate": null,
+       "cculicense": null,
+       "licenseaddon": null,
+       "licmodelnum": null,
+       "licensesonumber": null,
+       "licproductfamily": null,
+       "licensesolnumber": null,
+       "licensesolnumber": null,
+       "licproductcode": null,
+       "assettotalprice": null,
+       "assetsolqty": null,
+       "assetunitprice": null,
+       "licproductname": null,
+       "licproductplatform": null,
+       "licensetotalprice": null,
+       "licensesolqty": null,
+       "licenseunitprice": null } ],
+  "fields":
+   [
+     {
+       "name": "accountid",
+       "tableID": 5481864,
+       "columnID": 11,
+       "dataTypeID": 1043,
+       "dataTypeSize": -1,
+       "dataTypeModifier": 1304,
+       "format": "text"
+     }
+   ]
+}

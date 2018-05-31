@@ -2,6 +2,7 @@
  * Routes - This file contains Express routes configuration
 */
 import elasticSearchController from '../controller/elasticsearchController';
+import authController from '../controller/authController';
 
 const routes = {
   '/elasticsearch/ping': [{
@@ -72,6 +73,12 @@ const routes = {
   }, {
     method: 'patch',
     controller: elasticSearchController.updateDocument,
+    options: null
+  }],
+
+  '/elasticsearch/login': [{
+    method: 'post',
+    controller: authController.validateUser,
     options: null
   }]
 };

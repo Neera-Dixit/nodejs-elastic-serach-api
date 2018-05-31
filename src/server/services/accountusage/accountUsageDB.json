@@ -1,0 +1,212 @@
+{
+  "command": "SELECT",
+  "rowCount": 552,
+  "oid": null,
+  "rows": [
+      {
+          "accountid": "0016000000lZakNAAS",
+          "accountname": "Northern Trust (Global HQ)",
+          "clusterid": "00053690-0a99-d382-0000-00000000bcd5",
+          "clustername": null,
+          "caseopencount": "1",
+          "caseclosedcount": "411",
+          "licensename": "LIC-00175421",
+          "licensetypename": "Pro",
+          "licenseclass": "appliance",
+          "licenseexpirydate": "2022-09-27T18:30:00.000Z",
+          "licensecreateddate": "2016-09-28T10:22:11.000Z",
+          "cculicense": false,
+          "licenseaddon": false,
+          "attribute": null,
+          "quantityused": 0,
+          "sonumber": "SO-024253",
+          "solnumber": "SOL-098026",
+          "productcode": "L-PRO-3060-G5"
+      }
+  ],
+  "fields": [
+      {
+          "name": "accountid",
+          "tableID": 5481864,
+          "columnID": 11,
+          "dataTypeID": 1043,
+          "dataTypeSize": -1,
+          "dataTypeModifier": 1304,
+          "format": "text"
+      },
+      {
+          "name": "accountname",
+          "tableID": 5481864,
+          "columnID": 26,
+          "dataTypeID": 1043,
+          "dataTypeSize": -1,
+          "dataTypeModifier": 259,
+          "format": "text"
+      },
+      {
+          "name": "clustername",
+          "tableID": 5481997,
+          "columnID": 7,
+          "dataTypeID": 1043,
+          "dataTypeSize": -1,
+          "dataTypeModifier": 84,
+          "format": "text"
+      },
+      {
+          "name": "caseopencount",
+          "tableID": 0,
+          "columnID": 0,
+          "dataTypeID": 20,
+          "dataTypeSize": 8,
+          "dataTypeModifier": -1,
+          "format": "text"
+      },
+      {
+          "name": "caseclosedcount",
+          "tableID": 0,
+          "columnID": 0,
+          "dataTypeID": 20,
+          "dataTypeSize": 8,
+          "dataTypeModifier": -1,
+          "format": "text"
+      },
+      {
+          "name": "licensename",
+          "tableID": 8084589,
+          "columnID": 17,
+          "dataTypeID": 1043,
+          "dataTypeSize": -1,
+          "dataTypeModifier": 84,
+          "format": "text"
+      },
+      {
+          "name": "licensetypename",
+          "tableID": 8105990,
+          "columnID": 3,
+          "dataTypeID": 1043,
+          "dataTypeSize": -1,
+          "dataTypeModifier": 84,
+          "format": "text"
+      },
+      {
+          "name": "licenseclass",
+          "tableID": 8084589,
+          "columnID": 13,
+          "dataTypeID": 1043,
+          "dataTypeSize": -1,
+          "dataTypeModifier": 259,
+          "format": "text"
+      },
+      {
+          "name": "licenseexpirydate",
+          "tableID": 8084589,
+          "columnID": 10,
+          "dataTypeID": 1082,
+          "dataTypeSize": 4,
+          "dataTypeModifier": -1,
+          "format": "text"
+      },
+      {
+          "name": "licensecreateddate",
+          "tableID": 8084589,
+          "columnID": 27,
+          "dataTypeID": 1114,
+          "dataTypeSize": 8,
+          "dataTypeModifier": -1,
+          "format": "text"
+      },
+      {
+          "name": "cculicense",
+          "tableID": 8084589,
+          "columnID": 18,
+          "dataTypeID": 16,
+          "dataTypeSize": 1,
+          "dataTypeModifier": -1,
+          "format": "text"
+      },
+      {
+          "name": "licenseaddon",
+          "tableID": 8084589,
+          "columnID": 19,
+          "dataTypeID": 16,
+          "dataTypeSize": 1,
+          "dataTypeModifier": -1,
+          "format": "text"
+      },
+      {
+          "name": "attribute",
+          "tableID": 8084589,
+          "columnID": 9,
+          "dataTypeID": 1043,
+          "dataTypeSize": -1,
+          "dataTypeModifier": 1304,
+          "format": "text"
+      },
+      {
+          "name": "quantityused",
+          "tableID": 8084589,
+          "columnID": 8,
+          "dataTypeID": 701,
+          "dataTypeSize": 8,
+          "dataTypeModifier": -1,
+          "format": "text"
+      },
+      {
+          "name": "quantity",
+          "tableID": 8084589,
+          "columnID": 30,
+          "dataTypeID": 701,
+          "dataTypeSize": 8,
+          "dataTypeModifier": -1,
+          "format": "text"
+      },
+      {
+          "name": "sonumber",
+          "tableID": 8105862,
+          "columnID": 2,
+          "dataTypeID": 1043,
+          "dataTypeSize": -1,
+          "dataTypeModifier": 84,
+          "format": "text"
+      },
+      {
+          "name": "solnumber",
+          "tableID": 8098859,
+          "columnID": 8,
+          "dataTypeID": 1043,
+          "dataTypeSize": -1,
+          "dataTypeModifier": 84,
+          "format": "text"
+      },
+      {
+          "name": "productcode",
+          "tableID": 8098859,
+          "columnID": 4,
+          "dataTypeID": 1043,
+          "dataTypeSize": -1,
+          "dataTypeModifier": 1304,
+          "format": "text"
+      }
+  ],
+  "_parsers": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+  ],
+  "rowAsArray": false
+}

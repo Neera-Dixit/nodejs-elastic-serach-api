@@ -1,0 +1,28 @@
+{
+  "accountId": "0016000000lZakNAAS",
+  "accountName": "Northern Trust (Global HQ)",
+  "assets": [
+
+  ],
+  "licenses": [
+    {
+      "attribute": null,
+      "cculicense": false,
+      "clusterId": "00053690-0a99-d382-0000-00000000bcd5",
+      "clusterName": null,
+      "licenseClass": "appliance",
+      "licenseCreatedDate": "2016-09-28T10:22:11.000Z",
+      "licenseExpiryDate": "2022-09-27T18:30:00.000Z",
+      "licenseId": "LIC-00175421",
+      "licenseType": "Pro",
+      "licenseaddon": false,
+      "quantityUsed": 0
+    }
+  ],
+  "nextOffset": 50,
+  "support": {
+    "casesClosed": "411",
+    "casesOpen": "1",
+    "list": []
+  }
+}
