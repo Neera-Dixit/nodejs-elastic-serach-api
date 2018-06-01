@@ -4,6 +4,9 @@
 
 import AppUtil from '../utility/appUtil';
 
+/** 
+ * @namespace middlewares
+*/
 const middlewares = {
   /**
    * authMiddleware - authentication Middleware

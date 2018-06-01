@@ -4,6 +4,9 @@
 
 import ESService from '../services/elasticsearchService';
 
+/** 
+ * @namespace elasticsearchController
+*/
 const elasticsearchController = {
 
   /**

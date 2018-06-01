@@ -4,6 +4,9 @@
 import elasticsearch from 'elasticsearch';
 import ESConfig from '../config/elasticSearch';
 
+/** 
+ * @namespace elasticsearchService
+*/
 const elasticsearchService = {
 
   /**

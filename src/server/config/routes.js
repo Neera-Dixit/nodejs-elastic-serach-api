@@ -4,6 +4,9 @@
 import elasticSearchController from '../controller/elasticsearchController';
 import authController from '../controller/authController';
 
+/** 
+ * @namespace routes
+*/
 const routes = {
   '/elasticsearch/ping': [{
     method: 'get',

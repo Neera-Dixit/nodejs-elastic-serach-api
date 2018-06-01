@@ -2,6 +2,9 @@ import _ from 'lodash';
 import jwt from 'jsonwebtoken';
 import constants from '../config/constants';
 
+/** 
+ * @namespace appUtil
+*/
 const appUtil = {
   /**
    * mountRoutes - Method used to mount Routes
@@ -43,7 +46,9 @@ const appUtil = {
   */
   generateToken: (payload) => {
     if (payload) {
-      return jwt.sign(payload, constants.jwtSecret);
+      return jwt.sign(payload, constants.jwtSecret, {
+        expiresIn: 24*60*60
+      });
     }
 
     return null;

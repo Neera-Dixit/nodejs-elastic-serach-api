@@ -5,7 +5,7 @@
   },
   "recurseDepth": 10,
     "source": {
-        "includePattern": ".+\\.js(doc|x)?$",
+        "includePattern": ".+\\.js(doc)?$",
         "excludePattern": "(^|\\/|\\\\)_",
         "include": ["./src"],
         "exclude": []
