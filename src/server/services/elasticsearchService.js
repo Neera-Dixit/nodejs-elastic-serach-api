@@ -144,11 +144,11 @@ const elasticsearchService = {
    * @returns {object}
   */
   searchInIndex: function searchInIndex({index, filter, search:searchKey}) {
-    return this.getClusterClient().search({index,
+    return this.getClusterClient().search({
       body: {
         query: {
             query_string:{
-               query: `${searchKey}*`
+               query: `*${searchKey}*`
             }
         }
     }});

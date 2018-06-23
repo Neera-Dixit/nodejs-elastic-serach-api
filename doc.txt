@@ -1,2 +1,9 @@
 #API Reference
 https://www.elastic.co/guide/en/elasticsearch/client/javascript-api/current/api-reference.html
+
+#References
+https://www.elastic.co/guide/en/elasticsearch/reference/current/_basic_concepts.html
+
+Cluster has nodes, node has Index (similar to table) which  has Documenents which is indexable
+#To start Elastic Search Server
+elasticsearch
