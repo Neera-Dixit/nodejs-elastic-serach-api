@@ -1,1 +1,3 @@
-#elasticSearch API implemented using ExpressJS
+# elasticSearch API implemented using ExpressJS
+
+API Authentication - JWT
