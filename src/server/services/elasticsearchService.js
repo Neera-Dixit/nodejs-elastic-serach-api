@@ -144,7 +144,7 @@ const elasticsearchService = {
    * @returns {object}
   */
   searchInIndex: function searchInIndex({index, filter, search:searchKey}) {
-    return this.getClusterClient().search({
+    return this.getClusterClient().search({index,
       body: {
         query: {
             query_string:{
